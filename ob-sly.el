@@ -8,7 +8,7 @@
 ;; URL: https://github.com/stardiviner/ob-sly
 ;; Created: 1th March 2016
 ;; Version: 0.0.1
-;; Package-Requires: ((sly "2.14"))
+;; Package-Requires: ((sly "1.0.0-beta") (org "8"))
 
 ;; This file is part of GNU Emacs.
 
