@@ -14,6 +14,8 @@ You can install it with:
 
 =[M-x package-install ob-sly RET]=
 
+*NOTE*: ~ob-sly~ depend on ~sly~. You need to install it too.
+
 * Usage
 
 ** Examples
