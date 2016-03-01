@@ -3,8 +3,12 @@
 ;; Copyright (C) 2016-2020 Free Software Foundation, Inc.
 
 ;; Authors: stardiviner <numbchild@gmail.com>
-;; Keywords: literate programming, reproducible research
-;; Homepage: http://orgmode.org
+;; Maintainer: stardiviner <numbchild@gmail.com>
+;; Keywords: org babel lisp sly
+;; URL: https://github.com/stardiviner/ob-sly
+;; Created: 1th March 2016
+;; Version: 0.0.1
+;; Package-Requires: ((sly "2.14"))
 
 ;; This file is part of GNU Emacs.
 
