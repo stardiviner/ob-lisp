@@ -34,7 +34,7 @@
 (require 'ob)
 (require 'sly)
 
-(declare-function sly-eval "ext:sly" (sexp &optional package))
+;; (declare-function sly-eval "ext:sly" (sexp &optional package))
 
 (defvar org-babel-tangle-lang-exts)
 (add-to-list 'org-babel-tangle-lang-exts '("lisp" . "lisp"))
