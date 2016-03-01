@@ -1,0 +1,30 @@
+* Intro
+
+org-babel functions for common lisp evaluation with SLY.
+
+This just replace the Org-mode original lisp babel evaluation with SLIME.
+
+SLY has some advantages over SLIME.
+
+* Install
+
+~ob-sly~ is available in MELPA.
+
+You can install it with:
+
+=[M-x package-install ob-sly RET]=
+
+* Usage
+
+** Examples
+
+#+BEGIN_EXAMPLE
+,#+BEGIN\under{}SRC lisp
+(print "hi")
+,#+END\under{}SRC
+
+,#+RESULTS:
+: 
+: "hi"
+#+END_EXAMPLE
+
