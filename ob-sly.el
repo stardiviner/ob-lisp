@@ -32,6 +32,7 @@
 
 ;;; Code:
 (require 'ob)
+(require 'sly)
 
 (declare-function sly-eval "ext:sly" (sexp &optional package))
 
