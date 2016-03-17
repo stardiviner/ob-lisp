@@ -1,4 +1,4 @@
-;;; ob-sly.el --- org-babel functions for common lisp evaluation with SLY or SLIME.
+;;; ob-lisp.el --- org-babel functions for common lisp evaluation with SLY or SLIME.
 
 ;; Copyright (C) 2016-2020 Free Software Foundation, Inc.
 
@@ -122,8 +122,8 @@ current directory string."
   ;; TODO: better would be to replace #(...) with [...]
   (replace-regexp-in-string "#(" "(" results))
 
-(provide 'ob-sly)
+(provide 'ob-lisp)
 
 
 
-;;; ob-sly.el ends here
+;;; ob-lisp.el ends here
