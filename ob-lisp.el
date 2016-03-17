@@ -39,9 +39,6 @@
 ;;; Code:
 (require 'ob)
 
-(require 'sly)
-(require 'slime)
-
 (defcustom org-babel-lisp-eval-fn "sly-eval"
   "The function to be called to evaluate code on the Lisp side."
   :group 'org-babel
