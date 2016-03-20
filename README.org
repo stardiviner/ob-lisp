@@ -14,6 +14,31 @@ You can install it with:
 
 *NOTE*: ~ob-lisp~ depend on ~sly~ and ~slime~ You need to install it too.
 
+** choose SLY or SLIME
+
+Because SLY has an autoload in source code file:
+
+#+BEGIN_SRC emacs-lisp
+;;;###autoload
+(if (or (not (memq 'slime-lisp-mode-hook lisp-mode-hook))
+        noninteractive
+        (prog1 (y-or-n-p "[sly] SLIME detected in `lisp-mode-hook', which causes keybinding conflicts.
+Remove it for this Emacs session?")
+          (warn
+           "To restore SLIME in this session, customize `lisp-mode-hook'
+and replace `sly-editing-mode' with `slime-lisp-mode-hook'.")
+          (remove-hook 'lisp-mode-hook 'slime-lisp-mode-hook)))
+    (add-hook 'lisp-mode-hook 'sly-editing-mode)
+  (warn "`sly.el' loaded OK. To use SLY, customize `lisp-mode-hook' and
+replace `slime-lisp-mode-hook' with `sly-editing-mode'."))
+#+END_SRC
+
+So if ~ob-lisp~ requires both in package dependency like MELPA, then Emacs will
+always raise this warning, that's annoying.
+
+So I remove SLY and SLIME package dependency. User need to install manually.
+If you have better idea, please let me know, thanks.
+
 * Customize
 
 You can customize variable ~ob-babel-lisp-eval-fn~ to specify SLY or SLIME.

@@ -8,7 +8,7 @@
 ;; URL: https://github.com/stardiviner/ob-lisp
 ;; Created: 1th March 2016
 ;; Version: 0.0.1
-;; Package-Requires: ((sly "1.0.0-beta") (slime "2.17") (org "8"))
+;; Package-Requires: ((org "8"))
 
 ;; This file is part of GNU Emacs.
 
@@ -83,6 +83,7 @@ current directory string."
         (format "(pprint %s)" body)
       body)))
 
+;;;###autoload
 (defun org-babel-execute:lisp (body params)
   "Execute a block `BODY' with `PARAMS' of Common Lisp code with Babel."
   (pcase org-babel-lisp-eval-fn
