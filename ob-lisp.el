@@ -1,14 +1,12 @@
 ;;; ob-lisp.el --- org-babel functions for common lisp evaluation with SLY or SLIME.
 
-;; Copyright (C) 2016-2020 Free Software Foundation, Inc.
+;; Copyright (C) 2009-2016 Free Software Foundation, Inc.
 
-;; Authors: stardiviner <numbchild@gmail.com>
-;; Maintainer: stardiviner <numbchild@gmail.com>
-;; Keywords: org babel lisp sly slime
-;; URL: https://github.com/stardiviner/ob-lisp
-;; Created: 1th March 2016
-;; Version: 0.0.1
-;; Package-Requires: ((org "8"))
+;; Authors: Joel Boehland
+;;	 Eric Schulte
+;;	 David T. O'Toole <dto@gnu.org>
+;; Keywords: literate programming, reproducible research
+;; Homepage: http://orgmode.org
 
 ;; This file is part of GNU Emacs.
 
@@ -31,7 +29,7 @@
 
 ;;; Requirements:
 
-;; Requires SLY (Sylvester the Cat's Common Lisp IDE) and SLIME
+;; Requires SLY (Sylvester the Cat's Common Lisp IDE) or SLIME.
 ;; See:
 ;; - https://github.com/capitaomorte/sly
 ;; - http://common-lisp.net/project/slime/
