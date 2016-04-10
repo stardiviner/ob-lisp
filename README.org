@@ -1,3 +1,13 @@
+* Deprecated NOW!!!
+
+This patch is accepted in org-mode. So this repository is deprecated.
+
+The process of this patch is at here:
+
+- https://github.com/melpa/melpa/pull/3682
+- https://github.com/melpa/melpa/pull/3763
+- http://thread.gmane.org/gmane.emacs.orgmode/105928
+
 * Intro
 
 org-babel functions for common lisp evaluation with SLY/SLIME.
