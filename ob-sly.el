@@ -1,4 +1,4 @@
-;;; ob-lisp.el --- org-babel functions for common lisp evaluation with SLY or SLIME.
+;;; ob-sly.el --- Babel Functions for Common Lisp   -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2009-2016 Free Software Foundation, Inc.
 
@@ -37,15 +37,15 @@
 ;;; Code:
 (require 'ob)
 
-(defcustom org-babel-lisp-eval-fn "sly-eval"
+(defcustom org-babel-lisp-eval-fn 'sly-eval
   "The function to be called to evaluate code on the Lisp side."
   :group 'org-babel
   :version "24.1"
-  :options '("sly-eval" "slime-eval")
-  :type 'stringp)
-
+  :options '('sly-eval 'slime-eval)
+  :type 'symbolp)
 
 ;; (declare-function sly-eval "ext:sly" (sexp &optional package))
+;; (declare-function slime-eval "ext:slime" (sexp &optional package))
 
 (defvar org-babel-tangle-lang-exts)
 (add-to-list 'org-babel-tangle-lang-exts '("lisp" . "lisp"))
@@ -118,8 +118,8 @@ current directory string."
   ;; TODO: better would be to replace #(...) with [...]
   (replace-regexp-in-string "#(" "(" results))
 
-(provide 'ob-lisp)
+(provide 'ob-sly)
 
 
 
-;;; ob-lisp.el ends here
+;;; ob-sly.el ends here
